@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/grdnt"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:text="Link Child Device"
+        android:textColor="#E65100"
+        android:textColorHint="#d9e5f3"
+        android:textSize="30sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="Name :"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/child_name_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="#00000000"
+                android:hint="Foysal Ahmed"
+                android:letterSpacing="0.1"
+                android:padding="4dp"
+                android:textColor="#fff"
+                android:textColorHint="#d9e5f3"
+                android:textSize="18sp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4a5a71">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="Age     :"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/age_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="#00000000"
+                android:hint="23"
+                android:letterSpacing="0.1"
+                android:padding="4dp"
+                android:textColor="#fff"
+                android:textColorHint="#d9e5f3"
+                android:textSize="18sp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4a5a71">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="Code   :"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/link_code_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="#00000000"
+                android:hint="23sdfgsfdhdhfdgh"
+                android:letterSpacing="0.1"
+                android:padding="4dp"
+                android:textColor="#fff"
+                android:textColorHint="#d9e5f3"
+                android:textSize="18sp"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4a5a71">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/qr_scanner_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/buttonColor"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:text="Scan QR code"
+        android:textAllCaps="false"
+        android:textColor="@color/textColor"
+
+        />
+
+    <ImageView
+        android:id="@+id/qr_view"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+
+        android:id="@+id/monitor_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="4dp"
+            android:text="After Successful Linking device"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="4dp"
+            android:text="Press the button below to start Monitoring"
+            android:textColor="@color/textColor"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/start_moitor_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/textColor"
+            android:background="@color/buttonColor"
+            android:text="Start Monitoring"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
